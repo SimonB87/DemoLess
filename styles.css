@@ -1,0 +1,102 @@
+body {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 16px;
+}
+#container {
+	margin: auto;
+	width: 80%;
+	max-width: 1050px;
+	min-width: 350px;
+}
+#header {
+	background-color: #3586d8;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	margin: 0;
+}
+	.title {
+		font-size: 2rem;
+		font-weight: bold;
+		color: #FFF;
+		margin: 10px 1rem;
+		padding-top: 1rem;
+		text-shadow: #000 1px 2px;
+	}
+.navigation {
+	background: #143352;
+	height: 32px;
+	padding: 5px 0;
+	margin: 0;
+	border-bottom: 2px solid #000;
+}
+.navigation li {
+	display: inline-block;
+	float: left;
+	margin: 5px;
+	list-style: url(none) none outside;
+	font-size: 1.1rem;
+}
+.navigation li .first {
+	margin-left: 1rem;
+}
+	.navigation li a, .navigation li a:visited {
+		padding: 5px;
+		decoration: none;
+		text-decoration: none;
+		color: #FFF;
+		font-weight: bold;
+		border-radius: 10px;
+	}
+	.navigation li a:hover {
+		color: #111;
+		background-color: #CCC;
+	}
+#content {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	min-height: 350px;
+}
+	#content h1 {
+		background-color: #143352;
+		color: #FFF;
+	}
+	#content h1, #content h2, #content p {
+		padding-left: 1rem;
+	}
+	#content ul {
+		margin-left: 3rem;
+	}
+	#content h2 {
+		border-bottom: 3px #143352 solid;
+		color: #143352;
+	}
+	.know {
+		width: 35%;
+		float: right;
+		border: 1px solid #143352;
+		border-radius: 10px;
+		margin: 0 10px 10px 10px;
+	}
+		.know h1 {
+			background-color: #143352;
+			color: #FFF;
+			margin-top: 0;
+			font-size: 1.6rem;
+			border-top-right-radius: 9px;
+			border-top-left-radius: 9px;
+		}
+	pre {
+		padding: 2rem;
+		background-color: #ddd;
+		font-family:"Lucida Console", Monaco, monospace;
+		border-radius: 10px;
+		clear: both;
+	}
+#footer {
+	clear: both;
+	border-top: 1px solid #143352;
+}
+	#footer p {
+		font-size: .8rem;
+	}

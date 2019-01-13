@@ -1,0 +1,112 @@
+.borderRadius {
+  border-radius: 10px;
+}
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 16px;
+}
+#container {
+  margin: auto;
+  width: 80%;
+  max-width: 1050px;
+  min-width: 350px;
+}
+#header {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #3586d8;
+  margin: 0;
+}
+#header .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f5f9fd;
+  margin: 10px 1rem;
+  padding-top: 1rem;
+  text-shadow: #000 1px 2px;
+}
+.navigation {
+  background: #174677;
+  height: 32px;
+  padding: 5px 0;
+  margin: 0;
+  border-bottom: 2px solid #000;
+}
+.navigation li {
+  display: inline-block;
+  float: left;
+  margin: 5px;
+  list-style: url(none) none outside;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+}
+.navigation li a,
+.navigation li a:visited {
+  padding: 5px;
+  decoration: none;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.navigation li a:hover,
+.navigation li a:visited:hover {
+  color: #174677;
+  background-color: #f5f9fd;
+}
+.navigation li.first {
+  margin-left: 1rem;
+}
+#content {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  min-height: 350px;
+}
+#content h1,
+#content h2,
+#content p {
+  padding-left: 1rem;
+}
+#content h1 {
+  background-color: #174677;
+  color: #FFF;
+}
+#content ul {
+  margin-left: 48px;
+  margin-left: 3rem;
+}
+#content h2 {
+  border-bottom: 3px #174677 solid;
+  color: #174677;
+}
+.know {
+  width: 35%;
+  float: right;
+  border: 1px solid #174677;
+  margin: 0 10px 10px 10px;
+  border-radius: 10px;
+}
+.know h1 {
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  background-color: #174677;
+  color: #FFF;
+  margin-top: 0;
+  font-size: 26px;
+  font-size: 1.6rem;
+}
+pre {
+  padding: 2rem;
+  background-color: #ddd;
+  font-family: "Lucida Console", Monaco, monospace;
+  clear: both;
+  border-radius: 10px;
+}
+#footer {
+  clear: both;
+  border-top: 1px solid #174677;
+}
+#footer p {
+  font-size: .8rem;
+}

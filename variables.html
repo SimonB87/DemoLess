@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Intro to Variables</title>
+	<link rel="stylesheet/less" type="text/css" href="styles.less" />
+	<script src="less.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<p class="title">Introduction to {LESS}</p>
+			<ul class="navigation">
+				<li class="first"><a href="index.html">Overview</a></li>
+				<li><a href="variables.html">Variables</a></li>
+				<li><a href="nesting.html">Nesting</a></li>
+				<li class="last"><a href="functions.html">Functions</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<h1>Variables and Mixens</h1>
+			<p><strong>Variables</strong> &amp; <strong>Mixens</strong> are two of ways that {less} makes it faster and easier to develop and maintain your CSS styles.</p>
+			<div class="know">
+				<h1>What is a Variable</h1>
+				<p>Variables store a CSS value. This value can then be used in numerous rules, and for different properties.</p>
+			</div>
+			<p>Variables are probably one of the most requested items in CSS, especially by front end designers who have a little experience with programming.</p>
+			<p>If you've ever written CSS, you have probably had numerous selectors that used the same color, thickness, etc. And you probably know the pain of running into a situation where you had to find and modify each of those values when a design aspect was changed. With {less} variables, this becomes much easier.</p>
+			<p>Consider the CSS code (expect over thousands of lines of code like this):</p>
+			<pre>.class1 {
+	background-color: #143352;
+}
+.class2 {
+	background-color: #fff;
+ 	color: #143352;
+}
+.class3 {
+	border: 1px solid #143352;
+}</pre>
+<p>In {less} we define a value that get's used over and over again. Such as:</p>
+<pre>@color-base: #143352;
+.class1 {
+	background-color: @color-base;
+}
+.class2 {
+	background-color: #fff;
+ 	color: @color-base;
+}
+.class3 {
+	border: 1px solid @color-base;
+} </pre>
+<p>Now we just have to change one value in one place, and all of the values get updated.</p>
+<h2>Mixens</h2>
+<div class="know">
+	<h1>Why Use a Mixen?</h1>
+	<p>A mixen is good when several elements will repeat a design element. Like a border style, radius, etc.</p>
+</div>
+<p>Mixens are kind of like variables, expect instead of storing a value, it stores one or more properties and their values.</p>
+<p>Mixens are in some ways more powerful, but also a little less flexible, because they combine both the property and the value. This is because it lets you embed a CSS rule in another rule.</p>
+<p>This is great if you have a design element that gets repeated. However, it does require a bit more fore-thought to ensure that it will work for you.</p>
+<p>Consider the following example with a border radius.</p>
+<pre>.roundedborder {
+	border-radius: 10px;
+}
+
+.nav a {
+	.roundedborder;
+	color: #FFF;
+	background-color: #000;
+}</pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+		</div>
+		<div id="footer">
+			<h3>See <a href="code.html">Less Code</a> for this page.</h3>
+			<p>Demo site created by <a href="http://www.simonburyan.cz/port/">Simon Buryan</a> with support of Infinite Skills.</p>
+		</div>
+	</div>
+</body>
+</html>
